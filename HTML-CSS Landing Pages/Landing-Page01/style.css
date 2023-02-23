@@ -1,0 +1,126 @@
+*{
+    font-family: sans-serif;
+}
+
+.container{
+    /* margin: 20px 30px; */
+    /* padding: 20px; */
+}
+
+
+
+.navbar-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-top: 100px auto; */
+    padding: 30px 0px;
+}
+
+
+.navbar-container img{
+    /* border: 1px solid red; */
+    width: 120px;
+    margin-left: 68px;
+    
+}
+
+
+ .grow-list .list {
+    /* border: 1px solid #510a0a; */
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
+.grow-list .list .list-item{
+    font-weight: 500;
+    font-size: 17px;
+    color:#c7c7c7;
+    /* filter: brightness(1.6); */
+    margin-right: 8px;
+}
+
+.grow-list > .list > .list-item:first-child{
+    color: #000000;
+}
+
+.grow-list{
+    margin-right: 400px;
+}
+
+.button-group .nav-button{
+    background-color: #5955b3;
+    color: #ffffff;
+    /* border: 0; */
+    padding: 13px 30px;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.button-group{
+    margin-right: 200px;
+}
+
+.banner-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 88px;
+    text-align: left;
+}
+
+.banner-container div:first-child{
+    /* border: 1px solid #8a2be2; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    column-gap: 20px; 
+}
+
+.banner-container div h1{
+    /* border: 1px solid green; */
+    line-height: 1.2em;
+    font-size: 65px;
+    font-weight: 500px;
+    /* text-align: center; */
+    font-family: sans-serif;
+    margin-bottom: 0px;
+    color: #3c2f60;
+    text-align: left;
+}
+.heading-text span{
+    color: #5955b3;
+}
+.banner-container .description{
+    color: #989898;
+    width: 400px;
+    height: 80px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    font-size: 18px;
+    /* border: 1px solid #000000; */
+    margin-right: 147px;    
+}
+
+
+.banner-container .nav-button{
+    background-color: #5955b3;
+    color: #ffffff;
+    position: relative;
+    right: 165px;
+    bottom: 40px;
+
+}
+
+.banner-container .btn{
+    padding: 20px 50px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    font-size: 17px;
+    cursor: pointer;
+
+}
+
