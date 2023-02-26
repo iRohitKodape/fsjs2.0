@@ -1,0 +1,33 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    max-width: 1440px;
+    margin: auto;
+    overflow: hidden;
+    background-color: #1e1905;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px
+}
+
+ul li{
+    color: #808080;
+    list-style: none;
+}
