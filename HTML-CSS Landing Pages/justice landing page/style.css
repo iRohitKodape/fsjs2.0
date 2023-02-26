@@ -10,24 +10,85 @@ body{
     max-width: 1440px;
     margin: auto;
     overflow: hidden;
-    background-color: #1e1905;
+    background-color:#2B2923;
     height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin: 20px;
+}
+
+.logo{
+    position: relative;
+    left:130px;
+}
+
+.mb{
+   display: flex;
+   align-items:center;
+   justify-content: space-between;
+   gap: 25px;
 }
 
 ul{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:20px
+    gap:35px
 }
 
 ul li{
-    color: #808080;
+    color:#f4f4f4;
     list-style: none;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+button{
+    background-color:#1e1905 ;
+    color:#b89311;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    border: 1px solid #b89311;
+    background-color: #2B2923;
+    margin-left: 4px;
+
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.middle-section{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   margin: 40px 340px;
+}
+
+h1{
+    width: 60%;
+    font-size: 60px;
+    color: #ffffff;
+    font-family: 800;
+    padding-top: 20px;
+    padding-left: 18px;
+}
+p{
+    width: 40%;
+    color: whitesmoke;
+    font-weight: 300;
+    font-size: 14px;
+    position: relative;
+    left: 100px;
+    top: 20px;
+    /* padding-left: 30px; */
+    line-height: 22px;
+    word-spacing: 3px;
+    
 }
