@@ -93,11 +93,11 @@ p{
     
 }
 
-.image-section{
-    border: 1px solid red;
+.img-section{
+    
 }
 
-.image{
+.img-section > img{
     position: relative;
-    left:180px;
+    left: 340px;
 }
