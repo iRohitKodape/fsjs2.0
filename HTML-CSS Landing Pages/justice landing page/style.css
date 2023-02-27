@@ -92,3 +92,12 @@ p{
     word-spacing: 3px;
     
 }
+
+.image-section{
+    border: 1px solid red;
+}
+
+.image{
+    position: relative;
+    left:180px;
+}
