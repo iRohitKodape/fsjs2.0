@@ -1,1 +1,4 @@
-build="./HTML-CSS Landing Pages/"
+[build]
+
+
+publish = "./HTML-CSS Landing Pages/"
