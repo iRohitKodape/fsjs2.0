@@ -1,4 +1,5 @@
-[build]
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
 
-
-publish = "./HTML-CSS Landing Pages/"
