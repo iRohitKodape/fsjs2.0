@@ -24,7 +24,7 @@ ul{
   display: flex;
   align-items: center;
   gap: 50px;
-  margin-top: 25px;
+  margin-top: 1px;
 }
 li,p{
     color: #ffffff;
@@ -35,3 +35,48 @@ li{
 font-family:"Montserrat"
 
 }
+
+.right-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px; 
+    margin-right: 10px;
+}
+
+.icon{
+    font-size: 10px;
+    padding-left: 16px;
+}
+.right-nav img{
+    position: absolute;
+    top:45px;
+    right:166px
+}
+
+.contact{
+    z-index: 1;
+
+}
+h1,span{
+    color: white;    
+}
+
+.vertical-line{    
+    border: 1px solid rgb(189, 70, 70);
+}
+.info {
+    display: flex;
+
+}
+.right-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+
+
+
