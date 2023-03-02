@@ -1,82 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-family: "Montserrat";
+    
 }
 
 body{
-    max-width: 1440px;
     margin: auto;
     overflow: hidden;
-    background-color: #000000;
+    max-width: 1440px;
+}
+
+main{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
 }
 
 nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px;
-
-}
-
-ul{
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  margin-top: 1px;
-}
-li,p{
-    color: #ffffff;
-}
-li{
- list-style: none;
- font-size: 16px;
-font-family:"Montserrat"
-
-}
-
-.right-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px; 
-    margin-right: 10px;
-}
-
-.icon{
-    font-size: 10px;
-    padding-left: 16px;
-}
-.right-nav img{
-    position: absolute;
-    top:45px;
-    right:166px
-}
-
-.contact{
-    z-index: 1;
-
-}
-h1,span{
-    color: white;    
-}
-
-.vertical-line{    
-    border: 1px solid rgb(189, 70, 70);
-}
-.info {
-    display: flex;
-
-}
-.right-section{
+    width:100%;
+    min-height: 80px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
 
+nav span{
+    color: #ffffff;
+}
+
+.menu-links{
+   display: flex;
+   flex-basis: 20%;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 14px;
+}
+
+.menu-links li{
+    color: #ffffff;
+    list-style:none;
+}
+
+.three-btns{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+   font-size: 14px;
+}
+
+.three-btns > span:first-child{
+    padding: 0px 10px;
 
 }
 
+.three-btns .caret-down{
+    font-size: 8px;
+    margin-right: 50px;
+    margin-left: 5px;
+}
 
+ .three-btns .btn-img{
+    position: absolute;
+    right:55px;
+    
+ }
 
-
+ .three-btns .contact{
+    z-index: 1;
+ }
