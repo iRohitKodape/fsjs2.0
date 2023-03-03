@@ -5,62 +5,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Credit card app</title>
+    <title>credit card landing page</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
-    <nav>
-        <img src="./Assets/Icons/Logo.svg" alt="">
-        <ul>
-            <li>Home</li>
-            <li>Features</li>
-            <li>Pricing</li>
-            <li>Contact Us</li>
-        </ul>
-        <div class="side-nav">
-            <p>Eng</p>
-            <i class="fa-solid fa-caret-down"></i>
-            <div class="two">
-                <img src="./Assets/Icons/btn-pink-bg.svg" alt="">
-                <p>Contact Us</p>
+
+    <main>
+        <!-- nav-section -->
+        <nav>
+            <div class="logo">
+                <img src="./Assets/Icons/Logo.svg" alt="">
             </div>
-        </div>
-    </nav>
-    <!-- hero-section -->
-    <section class="hero">
-        <div class="left">
-            <h1>simplify ALl Transactions in <span>One Card</span></h1>
-            <p>Hurry up and join now.with this you can manage your daily <br>finances easily and safely</p>
-            <div class="three-items">
-                <img src="./Assets/Icons/btn-pink-bg.svg" alt="">
-                <span>GET STARTED</span>
-                <img src="./Assets/Icons/RightArrow.svg" alt="">
+            <div>
+                <ul class="menu">
+                    <li>Home</li>
+                    <li>Features</li>
+                    <li>Pricing</li>
+                    <li>About us</li>
+                </ul>
             </div>
-            <div class="stats">
-                <p>42K <span class="plus">+</span></p>
-                <p>Happy <br>Active Users</p>
-                <img src="./Assets/Icons/Vector 402.svg" alt="">
-                <p>12K <span class="plus">+</span></p>
-                <p>Years<br>Experience</p>
+            <div class="side-nav">
+                <p>Eng</p>
+                <p class="icon">
+                    <i class="fa-solid fa-caret-down"></i>
+                </p>
+                <p class="pink-bg"><img src="./Assets/Icons/btn-pink-bg.svg" alt=""></p>
+                <p class="contact">Contact Us</p>
+
             </div>
+        </nav>
+        <!-- mid-section -->
+        <section>
+
+            <div class="left">
+                <h1>Simplify All Transactions <br> in <span class="bg-pink">One Card</span> </h1>
+                <p>Hurry up and join now
+                    with this you can manage your daily <br> finances easily and safely
+                </p>
+                <div class="three">
+                    <span><img src="./Assets/Icons/btn-pink-bg.svg" alt=""></span>
+                    <span class="three-txt">GET STARTED</span>
+                    <span class="arrow"><img src="./Assets/Icons/RightArrow.svg" alt=""></span>
+                </div>
+                <div class="stats">
+                    <p class="stats-txt">42K <span class="plus">+</span></p>
+                    <span class="stats-sm">Happy <br> Active Users</span>
+                    <span class="vector"><img src="./Assets/Icons/Vector 402.svg" alt=""></span>
+                    <p class="stats-txt">12K <span class="plus">+</span></p>
+                    <span class="stats-sm">Years <br> Experience</span>
+                </div>
+            </div>
+            <div class="right">
+                <img class="back" width="700px" src="./Assets/Photos/backCards.png" alt="">
+                <img class="front" width="700px" src="./Assets/Photos/frontCards.png" alt="">
+            </div>
+
+
+        </section>
+        <!-- logos-section -->
+        <div class="multi-logos">
+            <div><img src="./Assets/Icons/Logo.svg" alt=""></div>
+            <div><img src="./Assets/Icons/Logo.svg" alt=""></div>
+            <div><img src="./Assets/Icons/Logo.svg" alt=""></div>
+            <div><img src="./Assets/Icons/Logo.svg" alt=""></div>
+            <div><img src="./Assets/Icons/Logo.svg" alt=""></div>
         </div>
-        <div class="right">
-            <img src="./Assets/Photos/backCards.png" alt="">
-            <img src="./Assets/Photos/frontCards.png" alt="">
-        </div>
-    </section>
-    <!-- third-section -->
-    <div class="logos">
-        <div>Hello</div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+        <!-- transactions -->
+        <article class="transacs">
+            <!-- top section -->
+            <section class="top-section">
+                <h3>The best payment service for your transactions </h3>
+                <p>The following are the services we provide to users.with the services we maximize it is hoped that
+                    users are satisfied with What we provide</p>
+            </section class="bottom-section">
+            <!-- bottom-section -->
+            <section>
+                  <img src="./Assets/Icons/dollar-circle.svg" alt="">
+                  <img src="./Assets/Icons/cloud-add.svg" alt="">
+                  <img src="./Assets/Icons/lock.svg" alt="">
+            </section>
+        </article>
+    </main>
 </body>
 
 </html>

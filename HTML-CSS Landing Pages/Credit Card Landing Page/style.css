@@ -1,80 +1,175 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
 
-*{
+
+* {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    
+    font-family: 'Poppins', sans-serif;
+
 }
 
+body {
+    /* overflow: hidden; */
+    background-color: black;
+}
 
-body{
-    /* max-width: 1440px;
-    overflow: hidden;
-    margin: auto;
-    background-color: #754a4a;
-    min-height: 1000px;
-    color: white;
-    font-family: "Poppins"; */
-    
+main{
+    display: flex;
+    flex-direction: column;
 }
 
 
 nav{
-    height: 15vh;
-     display: flex;
-     align-items: center; 
-    justify-content: space-around;
-}
-
-ul{
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    gap:45px;
+    color: white;
+    margin-top: 20px;
 }
 
-ul li{
+
+
+.menu{
+    display: flex;
+    gap: 40px;
+    position: relative;
+    right: 40px;
+}
+
+.menu li{
     list-style: none;
-    font-size: 14px;
     font-weight: 500;
 }
 
 .side-nav{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
+    justify-content: space-around;
+    gap: 10px;
+    position: relative;
     font-size: 14px;
     font-weight: 500;
+    right:85px;
 }
 
-.side-nav i{
-    font-size: 8px;
+.pink-bg{
+    position: absolute;
+}
+.contact{
+    z-index: 1;
 }
 
-.side-nav img{
+.icon{
+    margin-right: 30px;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+
+/* middle-section */
+
+section{
+    padding: 50px 145px;
     position: relative;
-    left:30px;
-    z-index: -1;
+}
+section .left{
+    color: #ffffff;
+
 }
 
-.two{
+section .left h1{
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    word-spacing: 2px;
+}
+
+
+section .left p{
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+section .left .three{
     display: flex;
+}
+
+section .left .three .three-txt{
+    font-size: 16px;
+    font-weight: 600;
     position: relative;
-    right: 20px;
+    right: 26px;
+}
+section .left .three .arrow{
+    position: relative;
+    right: 15px;
 }
 
-.hero{
+section .left .three .arrow img{
+    width: 60px;
+    
+}
+
+section .left .stats{
     display: flex;
-    margin-top: 50px;
-    margin-left: 120px;
-    background-color: cadetblue;
+    gap: 20px;
+    margin-top: 40px;
 }
 
-.hero .left{
-  
+section .left .stats .stats-txt{
+    font-size: 40px;
+    font-weight: 600;
 }
 
-.logos{
-    background-color: darkblue;
+section .left .stats .stats-txt .plus{
+    color: hotpink;
+
 }
+
+
+section .left .stats .stats-sm{
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+section .left .stats .vector{
+    padding: 0 20px;
+}
+
+
+.right{
+    display: flex;
+    flex-direction: column;
+}
+.right .back{
+    position: absolute;
+    top: -40px;
+    right: 300px;
+    opacity: 1.1;;
+}
+
+.right .front{
+    position: absolute;
+    top: 20px;
+    right: 200px;
+    z-index: 1;
+}
+
+
+.multi-logos{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:60px;
+    margin: 0 140px;
+    background-color: #242B2E;
+    
+}
+.multi-logos div img{
+    width: 100px;
+}
+
+.transacs 
