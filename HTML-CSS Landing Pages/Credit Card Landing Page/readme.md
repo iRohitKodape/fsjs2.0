@@ -1,1 +1,8 @@
-credit card landing page
+## credit card landing page
+
+
+
+
+ 
+
+[Link to project](https://creditcardlp.netlify.app/)
