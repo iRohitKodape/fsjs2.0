@@ -12,6 +12,7 @@
 body {
     /* overflow: hidden; */
     background-color: black;
+    margin: auto;
 }
 
 main{
@@ -28,18 +29,22 @@ nav{
     margin-top: 20px;
 }
 
-
+nav .logo{
+    position: relative;
+    left:70px
+}
 
 .menu{
     display: flex;
-    gap: 40px;
+    gap: 30px;
     position: relative;
     right: 40px;
 }
 
 .menu li{
     list-style: none;
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 .side-nav{
@@ -74,12 +79,14 @@ section{
 }
 section .left{
     color: #ffffff;
+    position: relative;
+    left:100px
 
 }
 
 section .left h1{
     font-size: 60px;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 10px;
     word-spacing: 2px;
 }
@@ -122,8 +129,8 @@ section .left .stats .stats-txt{
     font-weight: 600;
 }
 
-section .left .stats .stats-txt .plus{
-    color: hotpink;
+.plus{
+    color: #f437ea;
 
 }
 
@@ -142,18 +149,19 @@ section .left .stats .vector{
 .right{
     display: flex;
     flex-direction: column;
+
 }
 .right .back{
     position: absolute;
     top: -40px;
-    right: 300px;
+    right: 100px;
     opacity: 1.1;;
 }
 
 .right .front{
     position: absolute;
-    top: 20px;
-    right: 200px;
+    top: -20px;
+    right: -100px;
     z-index: 1;
 }
 
@@ -163,8 +171,7 @@ section .left .stats .vector{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:60px;
-    margin: 0 140px;
+    gap:70px;
     background-color: #242B2E;
     
 }
@@ -172,4 +179,113 @@ section .left .stats .vector{
     width: 100px;
 }
 
-.transacs 
+.transacs{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 50px;
+}
+
+.transacs .top-section{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ /* border: 1px solid blue; */
+ width: 100%;
+}
+
+.transacs .top-section .head3{
+    font-size: 45px;
+    font-weight: 500;
+   position: relative;
+   left: 160px;
+   /* border: 1px solid red; */
+   width: 40%;
+   margin-right: 50px;
+}
+
+.transacs .top-section .transacs-p{
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0 150px;
+    color:lightslategray;
+    position: relative;
+    left: -10px;
+    /* border: 1px solid red; */
+    width: 50%;
+    text-align: left;
+}
+/*bottom-section  */
+.transacs .bottom-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 240px;
+}
+
+.transacs .bottom-section div{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 25px;
+    background-color: #272727;
+}
+
+.transacs .bottom-section img{
+    margin-bottom: 15px;
+}
+
+.transacs .bottom-section p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.transacs .bottom-section .cloud{
+   background-color: #52504f ;
+    padding: 25px 30px; 
+    margin-bottom: 80px;
+    
+}
+
+/* unique cards */
+.unique{
+    background-color: #fceffb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 140px;
+}
+
+.unique .unique-txt{
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.unique .unique-txt h2{
+    font-size: 50px;
+}
+
+.unique .unique-txt h3{
+   font-size: 43px;
+   font-weight: 700;
+   margin-bottom: 40px;
+}
+
+.unique .unique-imgs img{
+    width: 800px;
+}
+
+.unique .unique-txt p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+
