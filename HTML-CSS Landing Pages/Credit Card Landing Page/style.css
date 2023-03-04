@@ -318,3 +318,39 @@ section .left .stats .vector{
     color: #ffffff;
 }
 
+.top-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 80px;
+}
+
+.top{
+display: flex;
+flex-direction: column;
+gap: 20px;
+border: 1px solid white;
+background-color: #413d3b;
+padding: 10px 20px;
+}
+
+.top-box .top .rating-img img{
+    width: 120px;
+}
+
+.top-box .top p{
+    font-size: 10px;
+    color: #b1b0af;
+}
+
+.top-box .top .customer .name{
+   font-size: 12px;
+   text-transform: capitalize;
+   color: #cac9c9;
+}
+
+
+.bg-dark{
+    background-color: #1e1f24;
+}
