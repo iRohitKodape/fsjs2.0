@@ -287,5 +287,34 @@ section .left .stats .vector{
 }
 
 
+/* reviews and ratings */
 
+.reviews{
+    color: #ffffff;
+ 
+}
+
+.reviews .headings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.reviews .paras{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #b2b2b2;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.reviews .headings .head-three::after{
+    content: " we provide";
+    color: #ffffff;
+}
 
