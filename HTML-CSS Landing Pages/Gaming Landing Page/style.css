@@ -1,16 +1,132 @@
-nav {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.wrapper{
+  min-height: 500px;
+  background-image: url(./Assets/Photos/futuristic-bg.png);
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  padding-top:20px;
+  filter: brightness(0.7);
+}
+
+nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    color: #a8a5a6;
 }
 
-.menu{
+nav .logo{
+    position: relative;
+    left: 100px;
+}
+
+nav .menu{
     display: flex;
-    gap: 30px;
+    gap: 35px;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    right: 50px;
+    color: #ffffff;
 }
 
-.menu li{
-    list-style-type: none;
-    font-size: 14px;
-    font-weight: 400;
+nav .orange{
+    background-color: #f4694c;
+    color: #ffffff;
+    padding: 10px 30px;
 }
+
+nav .sign-in {
+    background-color: black;
+    color:#ffffff;
+    padding: 10px 30px;
+}
+
+/* hero-section */
+
+
+
+.hero{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+
+}
+
+.hero .left .heads{
+    margin-bottom: 20px;
+}
+
+.hero .left .heads .heads3{
+   font-size: 35px;
+}
+
+
+.hero .left .paras{
+    margin-bottom: 40px;
+}
+
+.hero .left .paras .para{
+  color: #d4cccc;
+  font-size: 12px;
+}
+
+
+.hero .left button {
+    padding: 12px 25px;
+}
+
+.hero .left .orange{
+    background-color: #f4694c;
+    color:#ffffff;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.hero .left .learn-btn{
+    background-color: transparent;
+    color:#ffffff;
+    border:1px solid white;
+}
+
+.hero .right .play-btn{
+    margin-bottom: 40px;
+}
+
+.hero .right .bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.hero .right .bottom p{
+    font-size: 23px;
+    color: #a7a2a5;
+}
+
+.hero .right .bottom .dash-img{
+    position: relative;
+    right: 150px;
+    top: 20px;
+}
+
+.hero .right .bottom .arrow-img{
+    position: relative;
+    left:150px ;
+}
+
