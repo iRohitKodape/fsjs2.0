@@ -130,3 +130,190 @@ nav .sign-in {
     left:150px ;
 }
 
+/* popular games section */
+
+
+article .pop-txt{
+    text-align: center;
+    margin-top: 130px;
+    font-size: 30px;
+    
+}
+
+
+article .games-gallery{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+
+article .games-gallery .soldier-war{
+    background-image: url(./Assets/Photos/image\ 2.png); 
+    background-repeat: no-repeat;
+    background-size: 390px 100%;
+    background-position: right center;
+    height: 300px;
+    width: 300px;
+    position: relative;
+ 
+}
+
+article .games-gallery .soldier-war .soldier-content{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: #414547;
+    opacity: 0.9;
+    padding: 10px 10px;
+    
+}
+
+article .games-gallery .soldier-war .soldier-content .btn{
+    margin-bottom: 16px;
+}
+
+article .games-gallery .soldier-war .soldier-content .btn button{
+    background-color: #f4694c;
+    padding: 6px 12px;
+    color: #ffffff;
+}
+
+article .games-gallery .soldier-war .soldier-war-info-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    color: #ffffff;
+}
+
+article .games-gallery .soldier-war .soldier-war-info-left .para-action{
+    font-size: 12px;
+    color: #868988;
+}
+
+
+
+/*2nd game section */
+
+article .games-gallery .wariors-war{
+    background-image: url(./Assets/Photos/image\ 4.png); 
+    background-repeat: no-repeat;
+    background-size: 500px 100%;
+    background-position:center;
+    height: 300px;
+    width: 300px;
+    position: relative;
+ 
+}
+
+
+article .games-gallery .wariors-war .wariors-content{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: #232219;
+    opacity: 0.9;
+    padding: 10px 10px;
+    
+}
+
+article .games-gallery .wariors-war .wariors-content .btn {
+    margin-bottom: 16px;
+}
+
+
+article .games-gallery .wariors-war .wariors-content .btn button{
+    background-color: #f4694c;
+        padding: 6px 12px;
+        color: #ffffff;
+}
+
+
+article .games-gallery .wariors-war .wariors-war-info-left {
+    display: flex;
+        flex-direction: column;
+        justify-content: start;
+        color: #ffffff;
+}
+
+
+article .games-gallery .wariors-war .wariors-war-info-left .para-action{
+    font-size: 12px;
+        color: #868988;
+}
+
+
+
+
+/* 3rd game */
+article .games-gallery .wariors-war {
+    background-image: url(./Assets/Photos/image\ 4.png);
+    background-repeat: no-repeat;
+    background-size: 500px 100%;
+    background-position: center;
+    height: 300px;
+    width: 300px;
+    position: relative;
+
+}
+
+
+article .games-gallery .wariors-war .wariors-content {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: #232219;
+    opacity: 0.9;
+    padding: 10px 10px;
+
+}
+
+article .games-gallery .wariors-war .wariors-content .btn {
+    margin-bottom: 16px;
+}
+
+
+article .games-gallery .wariors-war .wariors-content .btn button {
+    background-color: #f4694c;
+    padding: 6px 12px;
+    color: #ffffff;
+}
+
+
+article .games-gallery .wariors-war .wariors-war-info-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    color: #ffffff;
+}
+
+
+article .games-gallery .wariors-war .wariors-war-info-left .para-action {
+    font-size: 12px;
+    color: #868988;
+}
+
+
+
+
+
+
+
+
+
+
