@@ -142,15 +142,18 @@ article .pop-txt{
 
 
 article .games-gallery{
-    margin-top: 100px;
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     gap: 30px;
     align-items: center;
     margin-bottom: 200px;
+    padding: 0 200px;
 }
 
-
+article .games-gallery button{
+    border: none;
+}
 article .games-gallery .soldier-war{
     background-image: url(./Assets/Photos/image\ 2.png); 
     background-repeat: no-repeat;
@@ -257,8 +260,8 @@ article .games-gallery .wariors-war .wariors-war-info-left .para-action{
 
 
 /* 3rd game */
-article .games-gallery .wariors-war {
-    background-image: url(./Assets/Photos/image\ 4.png);
+article .games-gallery .Pubjkin {
+    background-image: url(./Assets/Photos/image\ 3.png);
     background-repeat: no-repeat;
     background-size: 500px 100%;
     background-position: center;
@@ -269,7 +272,7 @@ article .games-gallery .wariors-war {
 }
 
 
-article .games-gallery .wariors-war .wariors-content {
+article .games-gallery .Pubjkin .Pubjkin-content {
     background-color: black;
     display: flex;
     justify-content: space-around;
@@ -277,25 +280,25 @@ article .games-gallery .wariors-war .wariors-content {
     position: absolute;
     bottom: 0px;
     width: 100%;
-    background-color: #232219;
+    background-color: #4d589f;
     opacity: 0.9;
     padding: 10px 10px;
 
 }
 
-article .games-gallery .wariors-war .wariors-content .btn {
+article .games-gallery .Pubjkin .Pubjkin-content .btn {
     margin-bottom: 16px;
 }
 
 
-article .games-gallery .wariors-war .wariors-content .btn button {
+article .games-gallery .Pubjkin .Pubjkin-content .btn button {
     background-color: #f4694c;
     padding: 6px 12px;
     color: #ffffff;
 }
 
 
-article .games-gallery .wariors-war .wariors-war-info-left {
+article .games-gallery .Pubjkin .Pubjkin-info-left {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -303,15 +306,64 @@ article .games-gallery .wariors-war .wariors-war-info-left {
 }
 
 
-article .games-gallery .wariors-war .wariors-war-info-left .para-action {
+article .games-gallery .Pubjkin .Pubjkin-info-left .para-action {
     font-size: 12px;
     color: #868988;
 }
 
 
+/* 4th game */
+
+article .games-gallery .Garela {
+    background-image: url(./Assets/Photos/Rectangle\ 56.png);
+    background-repeat: no-repeat;
+    background-size: 500px 100%;
+    background-position: center;
+    height: 300px;
+    width: 300px;
+    position: relative;
+
+}
 
 
+article .games-gallery .Garela .Garela-content {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: #928580;
+    opacity: 1.1;
+    padding: 10px 10px;
 
+}
+
+article .games-gallery .Garela .Garela-content .btn {
+    margin-bottom: 16px;
+}
+
+
+article .games-gallery .Garela .Garela-content .btn button {
+    background-color: #f4694c;
+    padding: 6px 12px;
+    color: #ffffff;
+}
+
+
+article .games-gallery .Garela .Garela-info-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    color: #ffffff;
+}
+
+
+article .games-gallery .Garela .Garela-info-left .para-action {
+    font-size: 12px;
+    color: #3b3d3c;
+}
 
 
 
