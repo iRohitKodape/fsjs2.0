@@ -427,3 +427,11 @@ article .games-gallery .Garela .Garela-info-left .para-action {
     color: #f4694c;
     padding: 14px 35px;
 }
+
+
+
+.download .top-download {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
