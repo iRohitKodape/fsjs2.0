@@ -366,6 +366,64 @@ article .games-gallery .Garela .Garela-info-left .para-action {
 }
 
 
+/* explore-section */
+
+.explore-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 80px;
+    position: relative;
+    right: 50px;
+}
+
+.explore-container .left-explore{
+    border: 1px solid red;
+    width: 500px;
+    height: 320px;
+    background-image: url(./Assets/Photos/Rectangle\ 57.png);
+    background-size: 500px 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.explore-container .right-explore{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+
+}
+
+.explore-container .right-explore .explore-heads{
+    font-size: 30px;
+    text-transform: capitalize;
+}
 
 
+.explore-container .right-explore .explore-paras{
+    font-size: 12px;
+    color: #a8a8a8;
+    font-weight: 500;
+}
 
+.explore-container .right-explore button{
+    border: none;
+}
+
+.explore-container .right-explore .explore-btns .now{
+    background-color: #f4694c;
+    color: #ffffff;
+    margin-right: 20px;
+    font-weight: 600;
+    padding: 17px 35px;
+}
+
+
+.explore-container .right-explore .explore-btns .more{
+    border: 1px solid #f4694c ;
+    background-color: #ffffff;
+    color: #f4694c;
+    padding: 14px 35px;
+}
