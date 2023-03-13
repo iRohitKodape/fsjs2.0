@@ -9,12 +9,12 @@
 
 
 .wrapper{
-  min-height: 500px;
+  min-height: 550px;
   background-image: url(./Assets/Photos/futuristic-bg.png);
   background-repeat: no-repeat;
-  background-size:100% 100%;
+  background-size:1200px 100%;
+  background-position: center;
   padding-top:20px;
-  filter: brightness(0.7);
 }
 
 nav{
@@ -26,7 +26,7 @@ nav{
 
 nav .logo{
     position: relative;
-    left: 100px;
+    left: 120px;
 }
 
 nav .menu{
@@ -38,6 +38,11 @@ nav .menu{
     position: relative;
     right: 50px;
     color: #ffffff;
+}
+
+nav .btns{
+    position: relative;
+    right:50px;
 }
 
 nav .orange{
@@ -65,8 +70,13 @@ nav .sign-in {
 
 }
 
+.hero .left{
+    margin-left: 90px;
+}
+
 .hero .left .heads{
     margin-bottom: 20px;
+    filter: brightness(250%);
 }
 
 .hero .left .heads .heads3{
@@ -101,8 +111,14 @@ nav .sign-in {
     border:1px solid white;
 }
 
+.hero .right{
+    margin-right: 100px;
+    margin-top: 100px;
+}
+
 .hero .right .play-btn{
     margin-bottom: 40px;
+    margin-left: 60px;
 }
 
 .hero .right .bottom{
@@ -112,11 +128,12 @@ nav .sign-in {
     align-items: center;
     margin-top: 50px;
     margin-right: 50px;
+    filter: brightness(250%);
 }
 
 .hero .right .bottom p{
     font-size: 23px;
-    color: #a7a2a5;
+    color: #f5eef2;
 }
 
 .hero .right .bottom .dash-img{
@@ -634,11 +651,85 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    background-color: #000000;
+    gap: 60px;
+  padding-right: 140px;
+  padding-top: 50px;
+padding-bottom: 50px;
 }
 
 footer p{
     font-size: 13px;
+    color: #7a8082;
 }
 
+footer .second,.third,.fourth,.fifth{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   gap: 10px;
+}
+
+footer .second p:first-child{
+    color: white;
+}
+
+footer .third p:first-child {
+    color: white;
+}
+
+footer .fourth p:first-child {
+    color: white;
+}
+
+footer .fifth p:first-child {
+    color: white;
+}
+
+footer .third,.fourth{
+    margin-bottom: 25px;
+}
+
+footer .fifth{
+    margin-bottom: 115px;
+}
+
+footer .first{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+footer .first p{
+    font-size: 12px;
+    color: #7a8082;
+}
+
+
+
+footer .first span{
+    color:#7a8082 ;
+    font-size: 12px;
+
+}
+footer .first .first-span1{
+ margin-top: 20px;
+ margin-bottom: 5px;
+}
+
+footer .first .first-span2 {
+    margin-bottom: 30px;
+}
+
+footer .first .icons{
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+}
+
+.end{
+    background-color: black;
+    border-top: 1px solid #272929;
+    padding-bottom: 50px;
+}
 
