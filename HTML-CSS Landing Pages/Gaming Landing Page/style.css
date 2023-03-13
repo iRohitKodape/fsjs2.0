@@ -628,6 +628,17 @@ article .games-gallery .Garela .Garela-info-left .para-action {
         left: 120px;
 }
 
+/* footer section */
 
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer p{
+    font-size: 13px;
+}
 
 
