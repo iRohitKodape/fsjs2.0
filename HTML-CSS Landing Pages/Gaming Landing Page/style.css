@@ -372,7 +372,7 @@ article .games-gallery .Garela .Garela-info-left .para-action {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 200px;
     gap: 80px;
     position: relative;
     right: 50px;
@@ -444,6 +444,8 @@ article .games-gallery .Garela .Garela-info-left .para-action {
 
 .download .top-download .txt-download{
     font-size: 35px;
+    margin-bottom: 70px;
+    margin-left: 20px;
 }
 
 .download .top-download .arrows-btn .left-arrow{
@@ -504,3 +506,28 @@ article .games-gallery .Garela .Garela-info-left .para-action {
         border: none;
 }
 
+/* most played games */
+
+main{
+    background-color: #000000;
+}
+main .games-heads{
+    text-align: center;
+    font-size: 45px;
+    color: #ffffff;
+}
+
+main .games-paras{
+    color:#818489;
+    font-size: 12px;
+    text-align: center;
+
+}
+
+main .games-paras .para-2{
+    margin-left: 56px;
+}
+
+main .games-paras .para-3{
+     
+}
