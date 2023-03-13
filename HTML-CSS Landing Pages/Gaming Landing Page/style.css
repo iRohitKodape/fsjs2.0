@@ -379,7 +379,6 @@ article .games-gallery .Garela .Garela-info-left .para-action {
 }
 
 .explore-container .left-explore{
-    border: 1px solid red;
     width: 500px;
     height: 320px;
     background-image: url(./Assets/Photos/Rectangle\ 57.png);
@@ -508,26 +507,65 @@ article .games-gallery .Garela .Garela-info-left .para-action {
 
 /* most played games */
 
-main{
+.most-played{
     background-color: #000000;
+    padding-top: 50px;
 }
-main .games-heads{
-    text-align: center;
-    font-size: 45px;
+.most-played .games-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.most-played .games-content .games-heads{
+    font-size: 30px;
     color: #ffffff;
+    font-weight: 400;
 }
 
-main .games-paras{
+.most-played .games-content .games-heads{
+    text-align: center;
+}
+
+.most-played .games-content .games-paras{
     color:#818489;
     font-size: 12px;
-    text-align: center;
+    margin-top: 100px;
+    margin-left: 250px;    
 
 }
 
-main .games-paras .para-2{
-    margin-left: 56px;
+
+
+.most-played .bighead{
+    font-size: 80px ;
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(53, 49, 49);
+    font-weight: 900;
+    margin-left: 450px;
 }
 
-main .games-paras .para-3{
-     
+.most-played .down-games{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 50px;
+}
+
+.most-played .down-games .first{
+ position: relative;
+ bottom: 230px;
+ right: 55px;
+}
+
+.most-played .down-games .second{
+  position: relative;
+  bottom: 90px;
+  right:42px;
+}
+
+.most-played .down-games .third{
+  
+
 }
