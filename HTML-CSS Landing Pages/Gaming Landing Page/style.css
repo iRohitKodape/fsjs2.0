@@ -569,3 +569,39 @@ article .games-gallery .Garela .Garela-info-left .para-action {
   
 
 }
+
+/* get started section */
+
+.get-started{
+    background-color: #000000;
+    color: #ffffff;
+    /* margin-bottom: 100px; */
+}
+
+.get-started .get-started-banner{
+    opacity: 0.4;
+    text-align: center;
+}
+
+.get-started .get-started-content{
+    position: absolute;
+    bottom: 330px;
+    left: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.get-started .get-started-content .get-started-heads{
+    font-size: 30px;
+    letter-spacing: 2px;
+    /* border: 1px solid red; */
+}
+
+.get-started .get-started-content .get-started-paras{
+    font-size: 10px;
+    color: #7e8082;
+    
+}
+
+
