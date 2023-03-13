@@ -576,6 +576,7 @@ article .games-gallery .Garela .Garela-info-left .para-action {
     background-color: #000000;
     color: #ffffff;
     /* margin-bottom: 100px; */
+    position: relative;
 }
 
 .get-started .get-started-banner{
@@ -584,24 +585,49 @@ article .games-gallery .Garela .Garela-info-left .para-action {
 }
 
 .get-started .get-started-content{
-    position: absolute;
-    bottom: 330px;
-    left: 580px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+   position: absolute;
+   top: 100px; 
+   left: 580px;  
 }
 
 .get-started .get-started-content .get-started-heads{
     font-size: 30px;
     letter-spacing: 2px;
-    /* border: 1px solid red; */
+    color: white;
+}
+
+.get-started .get-started-content .get-started-heads .get-started-head2{
+    margin-left:90px;
 }
 
 .get-started .get-started-content .get-started-paras{
-    font-size: 10px;
+    font-size: 13px;
     color: #7e8082;
+    margin-top: 10px;
+    margin-bottom: 40px;
     
 }
+
+.get-started .get-started-content .get-started-paras .get-started-p1{
+    margin-left: 30px;
+}
+
+.get-started .get-started-content .get-started-paras .get-started-p2{
+    margin-left: 120px;
+}
+
+.get-started .get-started-content .get-started-btn button{
+    background-color: #f4694c;
+        color: #ffffff;
+        margin-right: 20px;
+        font-weight: 600;
+        padding: 12px 32px;
+        border: none;
+        text-align: center;
+        position: relative;
+        left: 120px;
+}
+
+
 
 
