@@ -17,8 +17,9 @@ body{
 
 .container{
     padding-top: 20px;
-    height: 600px;
+    height: 700px;
     background-color: #000000;
+    margin: 0px 120px;
 }
 
 .container nav{
@@ -41,12 +42,23 @@ body{
     font-weight: 500;
 }
 
+.container nav button{
+    padding: 8px 25px;
+    border-radius: 20px;
+    background-color: #0c8bfd;
+    color: white;
+    border: none;
+}
+
 /* hero-section */
 
 .hero{
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
+    padding: 0 50px;
+    padding-bottom: 50px;
+    
 }
 
 .hero .left-hero{
@@ -63,7 +75,48 @@ body{
     font-style: italic;
 }
 
-.hero .left-hero .left-p p{
-   font-size: 14px;
+.hero .left-hero .left-p {
+   font-size: 15px;
     color: #848383;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.hero .left-hero .left-p p{
+    margin-bottom: 5px;
+}
+
+.hero .left-hero .left-btns button{
+  border-radius: 25px;
+  font-weight: 400;
+  color: white;
+
+}
+
+.hero .left-hero .left-btns button:first-child{
+    background-color: #0c8bfd;
+  padding: 12px 24px;
+    margin-right: 10px;
+}
+
+.hero .left-hero .left-btns .try{
+    background-color: #111010;
+    border:1px solid white;
+  padding: 12px 20px;
+}
+
+
+/* logos-section */
+
+.container .logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    background-color: #1d1c1c;
+    padding:25px 25px ;
+}
+
+.container .logos img{
+    width: 110px;
 }
