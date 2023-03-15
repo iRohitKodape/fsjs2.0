@@ -121,34 +121,142 @@ body{
     width: 110px;
 }
 
-/* service section */
-.services{
-    margin-top: 150px;
+
+/*  best-services */
+
+#services{
+    margin-top: 100px;
 }
 
-
-.services .service-txt{
-    text-align: center;
+#services .services-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.services .service-txt .service-heads{
+#services .services-top .head1{
     font-size: 40px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.services .service-txt .service-para{
-    color: #a5a4a4;
+#services .services-top .para{
+    color: #a19d9d;
+    font-size: 15px;
+    font-weight: 400;
 }
 
-.services{
+
+
+#services .service-box{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+/* 1st box */
+
+#services .service-box .fast{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #bfbebe;
+    padding: 35px 22px;
+    border-radius: 30px;
+}
+
+#services .service-box .fast .fast-head{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 30px;
     
 }
 
-
-.services .fast-box{
-    border: 1px solid black ;
+#services .service-box .fast .fast-para{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #848383;
+    font-weight: 400;
 }
+
+
+/* 2nd box */
+
+
+#services .service-box .speed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #bfbebe;
+    padding: 35px 22px;
+    border-radius: 30px;
+    background-color: black;
+    position: relative;
+    bottom: 40px;
+}
+
+#services .service-box .speed .speed-head {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+#services .service-box .speed .speed-para {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #848383;
+    font-weight: 400;
+}
+
+
+/* 3rd box */
+
+
+#services .service-box .faster-service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #bfbebe;
+    padding: 35px 22px;
+    border-radius: 30px;
+}
+
+#services .service-box .faster-service .faster-head {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+#services .service-box .faster-service .faster-para {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #848383;
+}
+
+
+
+
+
+
 
 
