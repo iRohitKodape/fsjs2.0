@@ -11,8 +11,8 @@
 
 body{
     max-width: 1440px;
-    overflow: hidden;
     margin: auto;
+    min-height: 100vh;
 }
 
 .container{
@@ -120,3 +120,35 @@ body{
 .container .logos img{
     width: 110px;
 }
+
+/* service section */
+.services{
+    margin-top: 150px;
+}
+
+
+.services .service-txt{
+    text-align: center;
+}
+
+.services .service-txt .service-heads{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.services .service-txt .service-para{
+    color: #a5a4a4;
+}
+
+.services{
+    display: flex;
+    
+}
+
+
+.services .fast-box{
+    border: 1px solid black ;
+}
+
+
