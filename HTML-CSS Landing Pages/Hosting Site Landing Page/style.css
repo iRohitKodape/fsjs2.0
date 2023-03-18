@@ -357,7 +357,7 @@ body{
 .pricing{
     background-color: #000000;
     padding: 80px 0px;
-    margin: 0 240px;
+    margin: 0 200px;
 }
 
 .pricing .pricing-top{
@@ -383,7 +383,11 @@ body{
  }
 
 .pricing .pricing-bottom{
-    margin-top: 70px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
 }
 
 .pricing .pricing-bottom .pricing-content{
@@ -393,11 +397,15 @@ body{
     /* align-items: center; */
     color:black ;
     background-color:#ffffff ;
+    border: 1px solid #2a1919;
+    padding: 40px 15px ;
+    border-radius: 25px;
 }
 
 .pricing .pricing-bottom .pricing-content .price-title{
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .pricing .pricing-bottom .pricing-content .price{
@@ -419,5 +427,40 @@ body{
 .pricing .pricing-bottom .pricing-content .price-para{
     font-size: 12px;
     font-weight: 600;
+    margin-bottom: 15px;
 }
+
+
+
+.pricing .pricing-bottom .pricing-content .price-detail{
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #5f5e5e;
+}
+
+.pricing .pricing-bottom .pricing-content hr{
+    margin-bottom: 25px;
+    color: #f6d8d8;
+    
+}
+.pricing .pricing-bottom .pricing-content .price-title{
+    margin-bottom: 10px;
+}
+
+.pricing .pricing-bottom .pricing-content img{
+    width: 15px;
+}
+
+.pricing .pricing-bottom .pricing-content button{
+    background-color: #0c8bfd;
+    color: #ffffff;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
 
