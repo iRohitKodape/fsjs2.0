@@ -390,6 +390,16 @@ body{
     gap:20px;
 }
 
+.pricing .pricing-bottom .pricing-content:first-child hr{
+    margin-top: 15px;
+} 
+
+.pricing .pricing-bottom .pricing-content:first-child{
+    padding: 40px 10px;
+}
+.pricing .pricing-bottom .pricing-content:first-child .price-detail{
+    margin-left: 5px;
+}
 .pricing .pricing-bottom .pricing-content{
     display: flex;
     flex-direction: column;
@@ -462,5 +472,51 @@ body{
     border-radius: 15px;
     margin-top: 15px;
 }
+
+.pricing .pricing-bottom .pricing-content:nth-child(2){
+    background-color: #0c8bfd;
+    color: white;
+}
+
+.pricing .pricing-bottom .pricing-content:nth-child(2) .price-detail{
+    color: #ffffff;
+}
+
+.pricing .pricing-bottom .pricing-content:nth-child(2) .price .month{
+    color: #81c3fe;
+}
+
+.pricing .pricing-bottom .pricing-content:nth-child(2) button{
+    background-color: white;
+    color: #0c8bfd;
+}
+
+
+/* reviews-section */
+
+.reviews{
+    margin: 100px 200px ;
+}
+
+.reviews .reviews-top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.reviews .reviews-top .reviews-txt-left{
+   font-size: 40px;
+   font-weight: 600;
+}
+
+.reviews .reviews-top .reviews-txt-right{
+    color:#9c9b9b ;
+    font-size: 14px;
+    position: relative;
+    left: 30px;
+}
+
+/* */
 
 
