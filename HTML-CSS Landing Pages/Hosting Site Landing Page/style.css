@@ -352,5 +352,72 @@ body{
     color: #FFFFFF;
 }
 
+/* pricing section */
 
+.pricing{
+    background-color: #000000;
+    padding: 80px 0px;
+    margin: 0 240px;
+}
+
+.pricing .pricing-top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+}
+
+.pricing .pricing-top img{
+    width: 45px;
+    position: relative;
+    top: 40px;
+    margin: 0 80px;
+}
+
+.pricing .pricing-top .pricing-heads{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 500;
+ }
+
+.pricing .pricing-bottom{
+    margin-top: 70px;
+}
+
+.pricing .pricing-bottom .pricing-content{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    color:black ;
+    background-color:#ffffff ;
+}
+
+.pricing .pricing-bottom .pricing-content .price-title{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.pricing .pricing-bottom .pricing-content .price{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.pricing .pricing-bottom .pricing-content .price .price-amt{
+    font-size: 38px;
+    font-weight: 600;
+}
+.pricing .pricing-bottom .pricing-content .price .month{
+    color: #8d8c8c;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 2px;
+}
+
+.pricing .pricing-bottom .pricing-content .price-para{
+    font-size: 12px;
+    font-weight: 600;
+}
 
