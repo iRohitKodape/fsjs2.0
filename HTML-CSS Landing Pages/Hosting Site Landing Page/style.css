@@ -603,8 +603,91 @@ body{
 footer{
     background-color: black;
     color: white;
+    padding:20px 60px ;
+    margin: 0 200px;
+    margin-bottom: 40px;
+    
 }
 
 footer .footer-txt{
-  
+  text-align: center;
+  font-size: 38px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+footer .footer-btns{
+    border: 1px solid black;
+    background-color: #292828;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 15px;
+    border-radius: 30px;
+  margin-bottom: 80px;
+}
+
+footer .footer-btns button{
+    text-align: start;
+    height: 50px;
+    width: 230px;
+    border-radius: 25px;
+    padding-left: 20px;
+    background-color: #3e3d3d;
+    color: #838282;
+    border: none;
+}
+
+footer .footer-btns button:nth-child(4){
+    background-color: #0c8bfd;
+    height: 50px;
+    width: 120px;
+    color: white;
+    padding-left: 34px;
+    border-radius: 25px;
+}
+
+footer .hr{
+    /* margin-bottom: 80px; */
+    height: 1px;
+    background-color: #5f5e5e;
+
+}
+
+footer .five-rows{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+}
+
+footer .five-rows div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer .five-rows div p{
+    font-size: 11px;
+    color:#b6b2b2;
+}
+
+footer .five-rows div p:first-child{
+    color: #d3d2d2;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+footer .five-rows .Help{
+    margin-bottom: 22px;
+}
+
+footer img{
+    margin-bottom: 40px;
+    position: relative;
+    top: 20px;
 }
