@@ -598,3 +598,13 @@ body{
  }
 
 
+/* footer-section */
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+footer .footer-txt{
+  
+}
