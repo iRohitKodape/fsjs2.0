@@ -10,22 +10,23 @@
 body{
     max-width: 1440px;
     min-height: 100vh;
-    margin: auto;
     background-color: #000000;
-
+    overflow: hidden;
 }
+
+
 
 .nav-container{
     height: 600px;
     width: 1000px;
-    margin: auto;
     background-color: aquamarine;
-    padding-top: 30px;
+    padding-top: 50px;
     background: url(./Photos/mainImage.png);
     background-repeat: no-repeat;
     background-size: 200px 450px;
     background-position: top -45px left 170px;
-    
+    border: 1px solid yellow;
+    margin: auto;
 }
 
 .nav-container nav .logo{
@@ -67,4 +68,77 @@ body{
     background-color: #1e1e21;
     color: white;
     border: none;
+}
+
+.nav-container .beat-3{
+    color: white;
+    position: relative;
+    left: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.nav-container .beat-3 .on-ear{
+    margin-left: 65px;
+    margin-top: 25px;
+}
+
+.nav-container .beat-3 .beat-3-txt{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.nav-container .beat-3 .beat-3-txt p:first-child{
+    font-size: 40px;
+    font-weight: 600;
+
+}
+.nav-container .beat-3 .beat-3-txt p:nth-child(2){
+    font-size: 13px;
+    font-weight:600;
+}
+
+.nav-container .beat-3 div{
+    margin-left: 12px;
+}
+
+.nav-container .beat-3 .beat-3-para{
+    font-size: 10px;
+    line-height: 22px;
+    color: #9da0a4;
+    font-weight: 500;
+}
+
+.nav-container .beat-3 .beat-add{
+    display: flex;
+    gap: 10px;
+    background-color: #1e1e21;
+    width: 150px;
+    padding: 8px 10px;
+}
+
+.nav-container .beat-3 .beat-add span:nth-child(2){
+    font-size: 9px;
+    padding-top: 4px;
+}
+
+.nav-container .beat-3 .beat-add span:nth-child(3){
+    font-size: 12px;
+    font-weight: 600;
+    padding-top: 2px;
+}
+
+.nav-container .logos{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    margin-left: 200px;
+}
+
+.nav-container .logos img{
+    width: 60px;
 }
