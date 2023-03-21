@@ -28,11 +28,7 @@ body{
     border: 1px solid yellow;
     margin: auto auto;
 }
-
-
-
   
-
 .nav-container nav{
     display: flex;
     justify-content: space-around;
@@ -200,3 +196,42 @@ body{
     color: rgb(177, 172, 172);
     font-weight: 500;
 }
+
+/* case  */
+
+.nav-container .case .case-head{
+    text-align: center;
+}
+
+.nav-container .case .case-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: white;
+    margin-top: 70px;
+}
+
+.nav-container .case .case-content .case-txt p{
+   font-size: 10px;
+   line-height: 18px;
+   font-weight: 400;
+   color: #c0c4c6;
+}
+
+
+.nav-container .case .case-content .case-txt .warning{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #1e1e21;
+    width: 100px;
+    padding: 6px 12px;
+    border-radius: 2px;
+    
+}
+
