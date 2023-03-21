@@ -145,7 +145,7 @@ body{
 .nav-container .spec-section{
     color: white;
     margin-top: 100px;
-    padding-bottom:200px ;
+    padding-bottom:80px ;
 }
 
 .nav-container .spec-section .spec-head{
@@ -235,3 +235,51 @@ body{
     
 }
 
+/* buy-now */
+
+
+.nav-container .buy{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 150px;
+    background-color: #181a1b;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 20px 30px;
+    border-radius:10px ;
+}
+
+.nav-container .buy .buy-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-container .buy .buy-content .buy-heads{
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.nav-container .buy .buy-content span{
+    font-size: 9px;
+    color: #cbd0d2;
+}
+
+.nav-container .buy .buy-content .buy-btn button{
+    background-color: #000000;
+    padding: 8px 20px;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 6px;
+    margin-top: 2px;
+}
+
+.nav-container .buy .buy-content .buy-btn button span:nth-child(2){
+   font-size: 9px;
+   font-weight: 500;
+}
