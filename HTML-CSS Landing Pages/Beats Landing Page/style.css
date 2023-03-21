@@ -245,6 +245,7 @@ body{
     align-items: center;
     gap: 40px;
     margin-top: 150px;
+    margin-bottom: 80px;
     background-color: #181a1b;
     margin-left: 200px;
     margin-right: 200px;
@@ -283,3 +284,60 @@ body{
    font-size: 9px;
    font-weight: 500;
 }
+
+/* style -section */
+
+.nav-container .style .style-img{
+    text-align: center;
+}
+
+
+.nav-container .style .style-items .items{
+    width: 100px;
+    height: 90px;
+    background-color: #181a1b;
+    margin-top: 100px;
+
+}
+
+
+.nav-container .style .style-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-container .style .style-items .items .black-txt{
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    bottom: 23px;
+    gap: 8px;
+}
+
+
+
+.nav-container .style .style-items .items .headphone{
+    position: relative;
+    top: -30px;
+    left: 22px;
+}
+
+.nav-container .style .style-items .items .black-txt .black-left p{
+    font-size: 8px;
+}
+
+.nav-container .style .style-items .items .black-txt .black-left p:nth-child(2){
+    margin-top: 4px;
+    color: #c0c4c6;
+}
+
+.nav-container .style .style-items .items .black-txt .black-right{
+    background-color: black;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
