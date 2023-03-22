@@ -1,3 +1,3 @@
-# Crypto landing page 
+# Crypto market landing page 
 
-[Live Link](https://cryptocom-page.netlify.app/)
+[Project link :-](https://cryptocom-page.netlify.app/)
