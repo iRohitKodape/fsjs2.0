@@ -51,5 +51,11 @@ body{
 }
 
 
-
-
+.container .hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-left: 220px;
+    margin-top: 150px;
+}
