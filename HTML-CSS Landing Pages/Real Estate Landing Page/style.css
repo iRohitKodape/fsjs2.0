@@ -10,6 +10,7 @@
 body{
     display: flex;
     flex-direction:column;
+    overflow-x: hidden;
 }
 
 #wrapper{
@@ -17,13 +18,13 @@ body{
     flex-direction: column;
     width: 80%;
     min-height: 1000px;
-    /* color: #f6f8fa; */
-    /* background-color: orange; */
     margin: auto;
+    background-color: #f6f8fa;
 }
 
 #wrapper .container{
     background-image: url(./Photos/mainBackground.png);
+    background-repeat: no-repeat;
     width:100%;
     min-height: 700px;
     /* opacity: 0.9; */
@@ -105,4 +106,17 @@ body{
     border-radius: 30px;
 }
 
+/* best estate */
 
+
+#wrapper .best-Estate{
+    display: flex;
+    flex-direction: column;
+}
+
+#wrapper .best-Estate .best-Estate-box{
+    display: flex;
+}
+#wrapper .best-Estate .best-Estate-box .first-box{
+    
+}
