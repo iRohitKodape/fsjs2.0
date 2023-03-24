@@ -112,11 +112,163 @@ body{
 #wrapper .best-Estate{
     display: flex;
     flex-direction: column;
+    min-height: 500px;
+    padding: 60px 100px;
+    background-color: #f6f8fa;
+    gap: 50px;
+}
+
+#wrapper .best-Estate .best-Estate-head{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    /* margin-bottom: 50px; */
 }
 
 #wrapper .best-Estate .best-Estate-box{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  
 }
+
+/* first-box */
+
 #wrapper .best-Estate .best-Estate-box .first-box{
-    
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+    background-image: url(./Photos/cardImage1.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
+
+#wrapper .best-Estate .best-Estate-box .first-box .first-content{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    background-color: white;
+    position: absolute;
+    bottom: -30px;
+    left: 20px;
+    padding:20px 10px;
+    border-radius:15px;   
+}
+#wrapper .best-Estate .best-Estate-box .first-box .first-content .first-head p:first-child{
+  color:black;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#wrapper .best-Estate .best-Estate-box .first-box .first-content .first-head p:nth-child(2) {
+    color: #6663e9;
+    font-weight:700;
+    font-size:14px;
+}
+
+#wrapper .best-Estate .best-Estate-box .first-box .first-content button{
+    padding: 8px 20px;
+    font-size: 12px;
+    border-radius: 15px;
+    border: none;
+    background-color: #6663e9;
+    color: white;
+    font-weight: 600;
+}
+
+
+/* second-box */
+
+#wrapper .best-Estate .best-Estate-box .second-box {
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+    background-image: url(./Photos/cardImage2.png);
+    background-position:left center ;
+    background-size: cover;
+    position: relative;
+}
+
+#wrapper .best-Estate .best-Estate-box .second-box .second-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    background-color: white;
+    position: absolute;
+    bottom: -30px;
+    left: 20px;
+    padding: 20px 10px;
+    border-radius: 15px;
+}
+
+#wrapper .best-Estate .best-Estate-box .second-box .second-content .second-head p:first-child {
+    color: black;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#wrapper .best-Estate .best-Estate-box .second-box .second-content .second-head p:nth-child(2) {
+    color: #6663e9;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+#wrapper .best-Estate .best-Estate-box .second-box .second-content button {
+    padding: 8px 20px;
+    font-size: 12px;
+    border-radius: 15px;
+    border: none;
+    background-color: #6663e9;
+    color: white;
+    font-weight: 600;
+}
+
+/* third box */
+
+#wrapper .best-Estate .best-Estate-box .third-box {
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+    background-image: url(./Photos/cardImage3.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#wrapper .best-Estate .best-Estate-box .third-box .third-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    background-color: white;
+    position: absolute;
+    bottom: -30px;
+    left: 20px;
+    padding: 20px 10px;
+    border-radius: 15px;
+}
+
+#wrapper .best-Estate .best-Estate-box .third-box .third-content .third-head p:first-child {
+    color: black;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#wrapper .best-Estate .best-Estate-box .third-box .third-content .third-head p:nth-child(2) {
+    color: #6663e9;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+#wrapper .best-Estate .best-Estate-box .third-box .third-content button {
+    padding: 8px 20px;
+    font-size: 12px;
+    border-radius: 15px;
+    border: none;
+    background-color: #6663e9;
+    color: white;
+    font-weight: 600;
+}
+
+
