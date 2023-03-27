@@ -668,15 +668,14 @@ body{
 #wrapper .newsletter{
     display: flex;
     flex-direction: column;
-    margin-top: 200px;
+    gap: 30px;
+    margin: 150px auto;
     width: 80%;
-    height: 300px;
-    margin: auto;
+    height: 400px;
     border: 1px solid black;
-    margin-bottom: 100px;
-    border-radius: 20px;
+    border-radius: 80px;
     background-color: #6663e9;
-    padding: 20px 40px;
+    padding: 60px 0px;
 }
 
 #wrapper .newsletter .newsletter-top{
@@ -684,7 +683,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 #wrapper .newsletter .newsletter-top .top-head{
@@ -696,10 +695,50 @@ body{
 #wrapper .newsletter .newsletter-top .top-head p:nth-child(2){
     /* border: 1px solid blue; */
     text-align: center;
-    padding: 0 20px;
+    padding: 25 20px;
 }
 
 #wrapper .newsletter .newsletter-top .top-para{
     font-size: 12px;
     color:#cdcbf8;
+    font-weight: 500;
 }
+
+#wrapper .newsletter .newsletter-top .top-para p:nth-child(2){
+    padding: 0 20px;
+    margin-top: 3px;
+}
+
+#wrapper .newsletter .newsletter-bottom{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+#wrapper .newsletter .newsletter-bottom .email{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #5654d1;
+  font-size: 11px;
+  color:#9695ef;
+  padding: 10px 20px;
+  padding-right: 130px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+#wrapper .newsletter .newsletter-bottom .subs-btn button{
+
+    padding: 15px 30px;
+        border-radius: 25px;
+        border: none;
+        color: #6663e9;
+        background-color: white;
+        font-weight: 700;
+        font-size: 12px;
+} 
