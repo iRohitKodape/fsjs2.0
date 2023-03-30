@@ -253,3 +253,49 @@ font-weight: 600;
     color: #758283;
 
 }
+
+
+
+/* best stack */
+
+
+.stack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.stack .stack-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.stack-right .right-top{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    background-color:#f8effd;
+    width: 160px;
+    font-size: 11px;
+    color: #9966de;
+    padding:5px 8px;
+    font-weight:700;
+    
+}
+
+.stack-right .right-head p{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+.stack-right .right-para p{
+    font-size: 11px;
+    color: #9ba1a1;
+    font-weight: 500;
+}
