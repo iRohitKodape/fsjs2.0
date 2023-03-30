@@ -264,7 +264,7 @@ font-weight: 600;
     justify-content: center;
     align-items: center;
     gap: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 
@@ -277,7 +277,7 @@ font-weight: 600;
 
 .stack-right .right-top{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 10px;
     background-color:#f8effd;
@@ -286,7 +286,7 @@ font-weight: 600;
     color: #9966de;
     padding:5px 8px;
     font-weight:700;
-    
+    border-radius: 20px;
 }
 
 .stack-right .right-head p{
@@ -309,8 +309,9 @@ font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 10px;
     margin-bottom: 100px;
+    margin-left: 150px;
 }
 
 
@@ -321,27 +322,28 @@ font-weight: 600;
     gap: 10px;
 }
 
-.stack-right .right-top {
+.Data-left .left-top {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 10px;
     background-color: #f8effd;
-    width: 160px;
+    width: 190px;
     font-size: 11px;
     color: #9966de;
     padding: 5px 8px;
     font-weight: 700;
+    border-radius: 20px;
 
 }
 
-.stack-right .right-head p {
+.Data-left .left-head p {
     font-size: 22px;
     font-weight: 600;
 }
 
 
-.stack-right .right-para p {
+.Data-left .left-para p {
     font-size: 11px;
     color: #9ba1a1;
     font-weight: 500;
