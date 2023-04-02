@@ -28,6 +28,10 @@ body{
     padding-top: 40px;
 }
 
+.container button:hover{
+    cursor: pointer;
+}
+
 .container .top-container{
     background: linear-gradient(175deg, #f4f8ff 5%, #e4f2ff 80%, #f4f8ff 30%);
     height: 650px;
@@ -571,3 +575,5 @@ footer .newsletter .email .email-p{
     font-weight: 400;
     color: #758283;
 }
+
+
