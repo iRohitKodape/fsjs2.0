@@ -1,0 +1,33 @@
+speek slow and calmly
+
+1. - The DOCTYPE is not actually an element or HTML tag
+Doc type in html defines about the document type that which type of document is this whether it is HTML 5 or older version. The DOCTYPE declaration is an instruction to the web browser about what version of HTML the page is written in.This ensures that the web page is parsed the same way by different web browsers.
+
+2.semantic elements defines what type of content is inside them.semantic tags are used so that we can improve the readablity of code and properly identify the particular sections among HTML elements besides this it is a good practice to use semantics some of the examples of semantics tags are article ,section ,main ,aside,footer,header,nav.Using this tags is more beneficial for the debugging of HTML so that the HTML doc doesn'tlook like a div soup.
+
+3.Data type in js firstly the primitive data types are number,boolean,string,null,undefined
+non-primitive data types are arrays,objects,symbol
+
+4.In array - array items are stored in linear fashion and that array items can be accessed through indexing number .In array indexing starts from 0 that means first array item is positioned on 0th index.array is also some sort of object.[] brackets are used to denote that it is an array for ex. let arr = [1,2"rohit"] array can hold values which can be among various primitive data types that can be string boolean,number,null etc etc as well as non-primitive data types can be stored inside an array for ex. an object
+
+5.objects - objects are collection of key:value pairs and the key's as well as their values can be accessed using dot/bracket notation .objects also contains dynamic property concept,
+values which can be among various primitive data types that can be string boolean,number,null etc etc... 
+
+
+6.Diff btwn div and span 
+
+first and foremost thing we can do in order to differentiate btwn span and div is ]
+div element's display property is block by default what that means is block type elements cover almost 100% in viewport it won't share there space with other element on the other hand span elements display property is inline-block by default it consumes the space according to the content they 
+hold and share left-over with other inline-block elements 
+
+
+7.What is meta
+
+
+
+
+how js engine works
+
+
+1.memory allocation 
+2.execution
