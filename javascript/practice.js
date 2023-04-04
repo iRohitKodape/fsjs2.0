@@ -67,16 +67,17 @@
 
 // console.log(Object.propertyIsEnumerable.call(fobj, "foo"));
 
-const age = {
-  alice: 18,
-  bob: 20,
-};
+// const age = {
+//   alice: 18,
+//   bob: 20,
+// };
 
-function hasPerson(name) {
-  return name in age;
-}
+// function hasPerson(name) {
+//   return name in age;
+// }
 
-let res = hasPerson("hasOwnProperty");
-console.log(res);
+// let res = hasPerson("hasOwnProperty");
+// console.log(res);
+
 
 
