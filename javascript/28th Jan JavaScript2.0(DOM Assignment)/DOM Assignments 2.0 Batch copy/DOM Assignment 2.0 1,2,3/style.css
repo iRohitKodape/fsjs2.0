@@ -8,7 +8,7 @@
   color: rgb(75, 74, 74);
 }
 
-/* fixing the body height and width to the screen size usig vh and vw  */
+/* fixing the body height and width to the screen size using vh and vw  */
 body {
   height: 100vh;
   width: 100vw;
