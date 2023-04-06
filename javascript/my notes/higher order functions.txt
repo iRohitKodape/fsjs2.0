@@ -1,0 +1,10 @@
+HIGHER ORDER FUNCTIONS
+
+
+1.array is giving task to foreach which is a highorder function this function will iterate over array items and will perform a specific task with each array items ,foreach will handover this task to a function which is passed in as a paramter to foreach.
+
+2.Or we can say that foreach will only iterate over array items and task with every array items will be performed according to the defination of that function which is passed as a parameter to foreach.
+
+3.The function which is passed to higher order function ex.foreach is called as a callback function .
+
+4.HOF functions will take callback(arrow function as a argument) and will pass all the array items to that call back function to perform operations on every array items
