@@ -1,5 +1,5 @@
-# Replicate the Following Output
+# Hosting Landing page
+`Live link is Provided! below `
 
-`Assests are Provided!`
+[Click Me](https://hosting-site-lpage.netlify.app/)
 
-![Project 2](./Hosting%20Landing%20Page.png)
