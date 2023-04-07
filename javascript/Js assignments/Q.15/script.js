@@ -7,16 +7,13 @@
 
 let num = prompt("Enter marks to see your grade");
 
-if (num >= 80 || num <= 100) {
+if (num >= 80 && num <= 100) {
   console.log("A");
-}
-else if (num >= 70 || num <= 79) {
+} else if (num >= 70 && num <= 79) {
   console.log("B");
-}
-else if (num >= 60 || num <= 69) {
+} else if (num >= 60 && num <= 69) {
   console.log("C");
-}
-else if (num >= 50 || num <= 59) {
+} else if (num >= 50 && num <= 59) {
   console.log("D");
 } else {
   console.log("F");
