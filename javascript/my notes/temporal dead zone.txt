@@ -1,0 +1,13 @@
+1.How js engine executes the code - firstly the code is scanned line by line and then got executed ,so in the case of variable declared with var for ex. console.log(a); var a = 10; console.log(a); after scanning all the code line by line.
+
+   In case of var
+   (a).first log shows undefined coz the variable with var a was present inside the global scope so the console.log can locate variable a .
+   (b).when second line is executed the var a got actual value of 10 in this case.
+   (c).when third line will be executed it will log the value of a is 10 in the global scope
+
+
+   In case of let/const
+
+    (a).first log shows error coz the variable with let/const a was present inside the script scope so the console.log can't locate variable a,unless it is defined with some value specially the const a.
+   (b).when second line is executed the let/const a got actual value of 10 in this case so from undefined to a defined value the a was in Temporal deadzone.
+   (c).when third line will be executed it will log the value of a is 10 in which now holds the value of 10 in script scope

@@ -1,0 +1,7 @@
+lexical scope
+
+1.The js engine code execution is line by line so as code startes executing the memory allocation also starts and tree-like structure is formed.
+
+2.Memory is allocated like variable and functions are stored in different memory blocks and there interconnection is called lexical scope.
+
+3.As in lexical scope the variables of functions are variables outside the functions can access from tree's bottom to top for ex.inner functions can accessed the variable of outer function in which the inner function is defined
