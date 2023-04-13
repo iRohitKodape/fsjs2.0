@@ -17,6 +17,10 @@
   padding-top:20px;
 }
 
+
+
+
+
 nav{
     display: flex;
     justify-content: space-around;
@@ -38,6 +42,17 @@ nav .menu{
     position: relative;
     right: 50px;
     color: #ffffff;
+}
+
+nav .menu li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav .menu li a:hover{
+    cursor: pointer;
+    color: #949191;
+    font-size: 12px;
 }
 
 nav .btns{
@@ -733,3 +748,28 @@ footer .first .icons{
     padding-bottom: 50px;
 }
 
+
+/* hover effects
+ */
+
+
+ button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.3s ease-out;
+    border: none;
+ }
+
+ footer p:hover{
+    cursor: pointer;
+    font-size: 12px;
+    opacity: 0.8;
+    transition: 0.3s ease-out;
+ }
+
+ footer .icons img:hover{
+    width: 28px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.3s ease-out;
+ }
