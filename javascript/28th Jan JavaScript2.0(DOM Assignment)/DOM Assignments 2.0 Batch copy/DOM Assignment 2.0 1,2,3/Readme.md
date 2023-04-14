@@ -106,7 +106,11 @@ btnDiv.appendChild(newBtn);
 Ans. Code : 👇
 
 ```
+let h3s = document.getElementsByTagName("h3");
 
+for (let index = 0; index < h3s.length-1; index++) {
+  h3s[index].style.backgroundColor = "#E3DFFD";
+}
 ```
 
 ---
@@ -117,32 +121,22 @@ Ans. Code : 👇
 Ans. Code: 👇
 
 ```
-//Selects main div .👇
-const acc_wrapper = document.querySelector(".accordian-wrapper");
+<!-- created a div with class accordian -->
+const divEl = document.querySelector(".accordian-wrapper");
+const newDiv = document.createElement("div");
+newDiv.setAttribute("class", "accordian");
 
-//Creates new element named skills and sets class "accordian".👇
-const skills = document.createElement("div");
-skills.setAttribute("class","accordian");
+<!-- created a h3 and p element and inserted content -->
+const newH3 = document.createElement("h3");
+newH3.innerText = "Skills";
+const newP = document.createElement("p");
+newP.innerText =
+  "I posses a very good command over the Full Stack Development technologies like MERN which can be seen in my work over the Github";
 
-
-<!-- Creates new element h3 and after adding innerText appended it -->👇
-
-const skill_h3 = document.createElement("h3");
-skill_h3.innerText = "Skills";
-skills.appendChild(skill_h3);
-
-
-<!-- Creates new element p and after adding innerText appended it -->👇
-
-const skills_p = document.createElement("p");
-
-skills_p.innerText = "I posses a very good command over the Full Stack Development technologies like MERN which can be seen in my work over the Github.";
-
-skills.append(skills_p);
-
-
-<!-- appended div element to the main div. -->👇
-acc_wrapper.appendChild(skills);
+<!-- Here elements are appended -->
+divEl.appendChild(newDiv);
+newDiv.appendChild(newH3);
+newDiv.appendChild(newP);
 ```
 
 ---
@@ -159,21 +153,27 @@ acc_wrapper.appendChild(skills);
 Ans. Code : 👇
 
 ```
-// left form modifications👇
-document.querySelector(".mainLeftDetails :nth-child(1)").setAttribute("placeholder","FSJS 2.0");
 
-document.querySelector(".mainLeftDetails :nth-child(2)").setAttribute("placeholder","fsjs@ineuron.ai");
+<!-- input elements placeholder values are changed -->
 
-document.querySelector(".mainLeftDetails :nth-child(3)").setAttribute("placeholder","Hello World");
+let inp = document.getElementsByTagName("input");
 
+for (let index = 1; index < inp.length; index++) {
+  console.log(index);
+  if (index % 2 != 0) {
+    inp[index].placeholder = "FSJS2.0";
+  } else {
+    inp[index].placeholder = "fsjs@ineuron.ai";
+  }
+}
 
+<!-- textarea placeholder values are changed -->
 
-// right form modification 👇
-document.querySelector(".mainRight form :nth-child(1)").setAttribute("placeholder","FSJS 2.0");
+const textAr = document.getElementsByTagName("textarea");
 
-document.querySelector(".mainRight form :nth-child(2)").setAttribute("placeholder","fsjs@ineuron.ai");
-
-document.querySelector(".mainRight form :nth-child(3)").setAttribute("placeholder","Hello World");
+for (let index = 0; index < textAr.length; index++) {
+  textAr[index].placeholder = "Hello world";
+}
 ```
 
 ---
