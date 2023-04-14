@@ -52,11 +52,11 @@ ulElement.removeChild(lastLi);
 Ans. Code : 👇
 
 ```
-const para = document.querySelector(".hero-left-section p");
+let pEl = document.querySelector("p");
 
-const span = para.getElementsByTagName("span");
-span[1].innerText = "an Employee";
-span[2].innerText = "iNeuron Intelligence Pvt Ltd"
+pEl.innerHTML = ` I am an aspiring <span>Full Stack JavaScript Developer</span>,
+        <br>who is currently working as <span>an Employee</span> for <br>
+        <span>iNeuron Intelligence Pvt Ltd.</span>.`;
 ```
 
 ---
@@ -68,8 +68,10 @@ span[2].innerText = "iNeuron Intelligence Pvt Ltd"
 Ans. Code : 👇
 
 ```
-const profilePic = document.querySelector(".hero-right-section img");
-profilePic.setAttribute("src","./image.png");
+let img = document.querySelector("img");
+
+img.src = './Untitled - Itachi Uchiha Transparent, HD Png Download , Transparent Png Image - PNGitem.png'
+
 ```
 
 ---
@@ -81,13 +83,13 @@ profilePic.setAttribute("src","./image.png");
 Ans. Code : 👇
 
 ```
-const pro_btn = document.querySelector(".hero-right-section-btns");
-const support = document.createElement("button");
-support.innerText = "Support Me";
-support.style.padding = "5px";
-support.style.width = "100px"
+let btnDiv = document.querySelector(".hero-right-section-btns");
 
-pro_btn.appendChild(support);
+const newBtn = document.createElement("button");
+newBtn.innerText = "support me";
+
+
+btnDiv.appendChild(newBtn);
 ```
 
 ---
@@ -104,16 +106,7 @@ pro_btn.appendChild(support);
 Ans. Code : 👇
 
 ```
-//It will select all heading elements👇
-const h3_background = document.querySelectorAll(".accordian h3");
 
-
-//It will convert that group of elements into array 👇
-let bg_color = [...h3_background];
-
-
-//It will change the background color of h3 elements.👇
-bg_color.map((ele)=> ele.style.backgroundColor = "#DDDDDD");
 ```
 
 ---
