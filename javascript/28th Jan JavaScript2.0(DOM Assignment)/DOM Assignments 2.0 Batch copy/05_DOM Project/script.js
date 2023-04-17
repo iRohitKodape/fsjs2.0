@@ -1,4 +1,3 @@
-const recipe = document.querySelector(".recipe-gallery");
 
 const galleryEl = document.querySelector(".recipe-gallery");
 
@@ -15,3 +14,8 @@ cardLastItem.childNodes[1].childNodes[3].innerHTML = "chicken afghani";
 
 
 galleryEl.appendChild(cardLastItem);
+
+// footer modified
+
+const footerLink = document.querySelector('p a');
+footerLink.textContent = 'Rohit Kodape'
