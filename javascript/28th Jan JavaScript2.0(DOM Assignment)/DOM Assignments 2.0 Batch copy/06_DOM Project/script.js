@@ -9,3 +9,13 @@ console.log(imgEl);
 
 const priceTxt = document.querySelector(".app_price");
 priceTxt.innerHTML = `<span>$10</span> / month`;
+
+
+// Task 3
+
+const footer = document.querySelector(".footer_social");
+
+const footerIcon = document.createElement("div");
+footerIcon.className = "footer_social_ico";
+footerIcon.innerHTML = ` <i class="fa-brands fa-linkedin"></i> `;
+footer.appendChild(footerIcon);
