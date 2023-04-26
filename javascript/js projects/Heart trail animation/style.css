@@ -1,0 +1,16 @@
+body{
+    margin: 0px;
+    height: 100vh;
+    background-color: rgb(159, 81, 81);
+}
+
+span{
+    background: url(./8664817_face_smile_wink_icon.png);
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
