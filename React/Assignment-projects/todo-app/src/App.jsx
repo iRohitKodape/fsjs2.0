@@ -1,5 +1,7 @@
 import { useState } from "react";
 import TodoList from "./Components/TodoList";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCirclePlus } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -16,7 +18,12 @@ function App() {
     setTodo("");
   }
 
-  console.log(todo);
+  const deleteItem = (id) => {
+    const newTodos = todos.filter((t) => t.id !== id);
+    setTodos(newTodos);
+  };
+
+  console.log(todos);
   return (
     <>
       <div className="container">
@@ -28,9 +35,13 @@ function App() {
             value={todo}
             onChange={(e) => setTodo(e.target.value)}
           />
-          <button type="submit">Add todo</button>
+          <button type="submit">
+            <FontAwesomeIcon icon={faCirclePlus} size="xl"/>
+          </button>
         </form>
-        <TodoList />
+        {todos.map((t) => {
+          return <TodoList t={t} key={t.id} deleteItem={deleteItem} />;
+        })}
       </div>
     </>
   );
