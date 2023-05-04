@@ -1,14 +1,32 @@
 import { faPlusSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Form = ({ setInputText }) => {
+const Form = ({ setInputText, inputText, todos, setTodos }) => {
   const inputTextHandler = (e) => {
     setInputText(e.target.value);
   };
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    setTodos([
+      ...todos,
+      {
+        id: Math.floor(Math.random() * 100),
+        text: inputText,
+        completed: false,
+      },
+    ]);
+    setInputText("");
+  };
   return (
     <form>
-      <input type="text" className="todo-input" onChange={inputTextHandler} />
-      <button className="todo-button" type="submit">
+      <input
+        value={inputText}
+        type="text"
+        className="todo-input"
+        onChange={inputTextHandler}
+      />
+      <button className="todo-button" type="submit" onClick={submitHandler}>
         <FontAwesomeIcon icon={faPlusSquare} />
       </button>
       <div className="select">
