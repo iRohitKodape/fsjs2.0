@@ -30,9 +30,6 @@ const Todo = ({ setTodos, todos, text, id, completed }) => {
       <button className="trash-btn" title="delete" onClick={deleteTodo}>
         <FontAwesomeIcon icon={faTrash} />
       </button>
-      <button className="edit-btn" title="edit">
-        <FontAwesomeIcon icon={faEdit} />
-      </button>
     </div>
   );
 };
