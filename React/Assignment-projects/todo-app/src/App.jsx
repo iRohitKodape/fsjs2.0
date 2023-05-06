@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Form from "./Components/Form";
 import TodoList from "./Components/TodoList";
 
+
 const App = () => {
   const [inputText, setInputText] = useState("");
   const [todos, setTodos] = useState([]);
