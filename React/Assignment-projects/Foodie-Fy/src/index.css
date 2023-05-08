@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500;700&display=swap');
+
 
 *{
   margin: 0;
@@ -19,7 +21,7 @@ body{
   justify-content: space-between;
   align-items: center;
   padding: 0px 150px;
-  background-color: rgb(210, 87, 17);
+  background-color: rgb(83, 188, 146);
   color:#ffffff;
   position: sticky;
 }
@@ -32,6 +34,10 @@ body{
 .hero{
   position: relative;
   height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero::before{
@@ -45,4 +51,44 @@ body{
   bottom: 0px;
   left: 0px;
   filter: brightness(0.45);
+}
+
+.hero form{
+  position: relative;
+}
+
+.hero form .upper-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.hero form .upper-form button{
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: none;
+  background-color:rgb(83, 188, 146) ;
+  padding-top: 5px;
+  padding-left: 2px;
+}
+
+.hero form .upper-form input{
+  padding: 12px 40px;
+  text-align: center;
+  border-radius: 30px;
+  border: none;
+  color: lightslategray;
+}
+
+.hero form .hero-txt{
+  position: relative;
+  color: white;
+}
+
+.hero form .hero-txt p:first-child{
+  font-size: 35px;
+  font-weight: 500;
 }
