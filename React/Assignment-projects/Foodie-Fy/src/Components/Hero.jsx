@@ -1,11 +1,16 @@
 import { FaSearch } from "react-icons/fa";
 
-const Hero = () => {
+const Hero = ({ inputText, setInputText }) => {
   return (
     <section className="hero">
       <form>
         <section className="upper-form">
-          <input type="text" placeholder="Search recipes here" />
+          <input
+            type="text"
+            placeholder="Search recipes here"
+            value={inputText}
+            onChange={(e) => setInputText(e.target.value)}
+          />
           <button type="submit">
             <FaSearch size="20px" color="white" />
           </button>

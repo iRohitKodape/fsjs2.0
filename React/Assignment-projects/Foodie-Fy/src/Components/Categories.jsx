@@ -1,10 +1,28 @@
 const Categories = () => {
   return (
     <article className="category">
-      <div className="upper-categories">
+      <section className="upper-categories">
         <h1>Categories</h1>
         <div className="line"></div>
-      </div>
+      </section>
+      <section className="lower-categories">
+        <div className="items">
+          <img src="" alt="" />
+          <p>title</p>
+        </div>
+        <div className="items">
+          <img src="" alt="" />
+          <p>title</p>
+        </div>
+        <div className="items">
+          <img src="" alt="" />
+          <p>title</p>
+        </div>{" "}
+        <div className="items">
+          <img src="" alt="" />
+          <p>title</p>
+        </div>
+      </section>
     </article>
   );
 };
