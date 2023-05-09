@@ -11,7 +11,7 @@ const Hero = () => {
           </button>
         </section>
         <section className="hero-txt">
-          <p>Which are your Favourites</p>
+          <p>Which are your Favourites ?</p>
           <p>Experience Deliciously with us </p>
         </section>
       </form>
