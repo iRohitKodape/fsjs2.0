@@ -7,8 +7,8 @@ const App = () => {
   return (
     <div>
       <Header />
-      <RecipeList />
       <Tabs />
+      <RecipeList />
     </div>
   );
 };
