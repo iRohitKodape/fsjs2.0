@@ -4,7 +4,7 @@ import { fetchDetails } from "../Api";
 
 function RecipeLists({ setLoader }) {
   const [searchTerm, setSearchTerm] = useState("");
-  const [query, setQuery] = useState("chicken_breast");
+  const [query, setQuery] = useState("");
   const [data, setData] = useState("");
 
   const searchRecipe = (searchQuery) => {
@@ -14,6 +14,10 @@ function RecipeLists({ setLoader }) {
       console.log(response);
     });
     setSearchTerm("");
+  };
+
+  const fetchMeal = (e) => {
+    
   };
 
   useEffect(() => {
@@ -31,7 +35,7 @@ function RecipeLists({ setLoader }) {
         <div className="input-wrapper">
           <input
             type="text"
-            placeholder="search by ingredients"
+            placeholder="search by name"
             onChange={(e) => setSearchTerm(e.target.value)}
             value={searchTerm}
           />
@@ -51,7 +55,7 @@ function RecipeLists({ setLoader }) {
                 <div className="img-wrapper">
                   <img src={item.strMealThumb} alt={item.strMeal} />
                 </div>
-                <p>{item.strMeal}</p>
+                <p onClick={fetchMeal}>{item.strMeal}</p>
               </div>
             );
           })}

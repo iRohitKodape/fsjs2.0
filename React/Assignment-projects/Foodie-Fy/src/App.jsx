@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div>
       <Header />
-      <Tabs />
+      <Tabs setLoader={setLoader} />
       <RecipeList setLoader={setLoader} />
       {loader && (
         <div className="loader">

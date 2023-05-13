@@ -9,9 +9,10 @@ import {
 import { MdFreeBreakfast } from "react-icons/md";
 import { fetchByCategory, fetchById } from "../Api";
 
-function Tabs() {
+function Tabs({ setLoader }) {
   const [active, setActive] = useState("Veg");
   const [tabData, setTabData] = useState("");
+  const [newTabData, setNewTabData] = useState();
   const [tabLabel, setTabLabel] = useState([
     {
       name: "Veg",
@@ -35,10 +36,11 @@ function Tabs() {
     },
   ]);
 
-  const handleCLick = (name, id) => {
+  const handleClick = (name, id) => {
     setActive(name);
-    fetchByCategory(name).then((res) => {
-      setTabData(res);
+    fetchById(id).then((response) => {
+      setTabData(response);
+      setLoader(false);
     });
   };
 
@@ -58,7 +60,7 @@ function Tabs() {
             <div
               className={`tablist ${active === item.name ? "active" : ""}`}
               key={index}
-              onClick={() => handleCLick(item.name, item.id)}
+              onClick={() => handleClick(item.name, item.id)}
             >
               {item.icons}
               <span>{item.name}</span>
@@ -99,10 +101,7 @@ function Tabs() {
             </div>
             <div className="right-col">
               <div className="image-wrapper">
-                <img
-                  src="https://images.unsplash.com/photo-1607532941433-304659e8198a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1378&q=80"
-                  alt=""
-                />
+                <img src={tabData.strMealThumb} alt="" />
               </div>
             </div>
           </>

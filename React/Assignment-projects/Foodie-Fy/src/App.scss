@@ -331,6 +331,7 @@ p {
     justify-content: center;
     gap: 20px;
     margin-bottom: 70px;
+    cursor: pointer;
 
     .flexItem {
         background-color: #fff;
@@ -361,6 +362,9 @@ p {
         }
     }
 }
+
+ 
+
 
 .loader {
     width: 100%;
