@@ -119,8 +119,47 @@ body{
 /* single card */
 
 
-
+.card {
+  position: relative;
+  border: 1px solid red;
+  padding: 20px;
+}
 
 .card .card-name{
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  color: white;
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #a044ff;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+
+
+.pagination{
 
 }
