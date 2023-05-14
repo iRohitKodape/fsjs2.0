@@ -6,9 +6,10 @@ const Hero = () => {
       <section className="search">
         <input type="text" placeholder="Search Pokemon" />
         <button>
-          <HiOutlineSearch />
+          <HiOutlineSearch color="white" />
         </button>
       </section>
+      <p>Search Among Your Favourites</p>
     </article>
   );
 };
