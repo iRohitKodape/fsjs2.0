@@ -4,6 +4,7 @@ import "./App.css";
 import Hero from "./Components/Hero";
 import Cards from "./Components/Cards";
 import Pagination from "./Components/Pagination";
+import SingleCard from "./Components/SingleCard";
 
 const urlApi = "https://pokeapi.co/api/v2/pokemon";
 
@@ -13,6 +14,8 @@ function App() {
   const [nextPageUrl, setNextPageUrl] = useState();
   const [prevPageUrl, setPrevPageUrl] = useState();
   const [loading, setLoading] = useState(true);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [isSearching, setIsSearching] = useState(false);
 
   useEffect(() => {
     setLoading(true);
@@ -31,6 +34,8 @@ function App() {
     return () => cancel();
   }, [currentPageUrl]);
 
+  useEffect(() => {}, []);
+
   const gotoNextPage = () => {
     setCurrentPageUrl(nextPageUrl);
   };
@@ -48,9 +53,21 @@ function App() {
 
   return (
     <main className="main-container">
-      <Hero />
-      <Cards pokemon={pokemon} />
-      <Pagination gotoNextPage={gotoNextPage} gotoPrevPage={gotoPrevPage} />
+      <Hero
+        searchTerm={searchTerm}
+        setSearchTerm={setSearchTerm}
+        setIsSearching={setIsSearching}
+        isSearching={isSearching}
+      />
+      {!isSearching ? <Cards pokemon={pokemon} /> : <SingleCard />}
+      {!isSearching ? (
+        <Pagination
+          gotoNextPage={nextPageUrl ? gotoNextPage : null}
+          gotoPrevPage={prevPageUrl ? gotoPrevPage : null}
+        />
+      ) : (
+        <SingleCard />
+      )}
     </main>
   );
 }
