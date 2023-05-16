@@ -1,3 +1,6 @@
+
+
+
 const SingleCard = () => {
   return (
     <div className="singleCard">
