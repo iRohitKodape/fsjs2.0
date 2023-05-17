@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    max-width: 1440px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.hero{
+    position: relative;
+    min-height: 400px;
+}
+
+.hero::before{
+   content: '';
+   background-image: url(./assets/21000.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   bottom: 0px;
+   background-position: center center;
+}
+
+.hero input{
+  position: relative;top: 200px;
+  left: 150px;
+  
+}
+
+.hero h2 {
+    position: relative;
+    top: 200px;
+    left: 150px;
+}

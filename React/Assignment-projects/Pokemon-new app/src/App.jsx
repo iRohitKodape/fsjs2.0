@@ -1,7 +1,9 @@
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
+
+import Hero from "./Components/Hero";
+import SingleCard from "./Components/SingleCard";
+import "./App.css";
 
 function App() {
   const [pokemon, setPokemon] = useState("");
@@ -9,17 +11,8 @@ function App() {
   return (
     <>
       <section>
-        <Card style={{ width: "18rem" }}>
-          <Card.Img variant="top" src="holder.js/100px180" />
-          <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </Card.Text>
-            <Button variant="success">Go somewhere</Button>
-          </Card.Body>
-        </Card>
+        <Hero />
+        <SingleCard />
       </section>
     </>
   );
