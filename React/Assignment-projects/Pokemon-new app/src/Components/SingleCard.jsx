@@ -1,21 +1,18 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
-const SingleCard = () => {
+const SingleCard = ({ name, img, abilities }) => {
+  console.log(name, img, abilities);
   return (
     <>
       <section className="single-card">
-        <Card style={{ width: "18rem" }}>
-          <Card.Img variant="top" src="holder.js/100px180" />
-          <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </Card.Text>
-            <Button variant="success">Go somewhere</Button>
-          </Card.Body>
-        </Card>
+        <div className="card-data">
+          <img src={img} alt={name} width='300px' />
+          <div className="info">
+            <span>{name}</span>
+            <span>{abilities}</span>
+          </div>
+        </div>
       </section>
     </>
   );
