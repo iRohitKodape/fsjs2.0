@@ -18,13 +18,15 @@ function App() {
 
   async function fetchPokemonData(pokemonName = "pikachu") {
     try {
-      const response = await axios.get(
-        `https://pokeapi.co/api/v2/pokemon/${pokemonName}`
-      );
+      const response = await axios
+        .get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
+        .then((res) => {
+          return res;
+        });
       console.log(response.data);
       setPokemon(response.data);
       setName(response.data.forms[0].name);
-      setAbilities(response.data.abilities[0].ability.name);
+      setAbilities(response.data.abilities[1].ability.name);
       setImg(response.data.sprites.front_default);
       return response.data;
     } catch (error) {

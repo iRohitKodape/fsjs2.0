@@ -8,6 +8,7 @@ body{
     overflow-x: hidden;
     margin: auto;
     min-height: 100vh;
+    box-sizing: border-box;
 }
 
 .hero{
@@ -56,22 +57,33 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 50px;
+    /* margin-bottom: 200px; */
     padding: 30px;
 }
 
 .single-card .card-data{
-    border: 1px solid rgb(8, 7, 7);
     border-radius: 10px;
+    box-shadow: 4px 4px 8px #b0adad;
     margin: 0px 100px;
     background-color: antiquewhite;
 }
 
 .single-card .info{
+    padding: 20px 0px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    border: 1px solid red;
-    margin-bottom: 100px;
+    align-items:stretch;
+    gap: 10px;
+    text-align: center;
 }
+
+.single-card .info span{
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: cursive;
+}
+
