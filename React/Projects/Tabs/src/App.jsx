@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import JobInfo from "./Components/JobInfo";
+import BtnContainer from "./Components/BtnContainer";
 
 const url = "https://course-api.com/react-tabs-project";
 
 const App = () => {
-  const [details, setDetails] = useState();
+  const [details, setDetails] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetchData();
@@ -15,19 +17,29 @@ const App = () => {
     try {
       const response = await fetch(url);
       const data = await response.json();
-      console.log(data);
       setDetails(data);
-      console.log(details);
+      setLoading(false);
     } catch (error) {
+      setLoading(true);
       throw error;
+      setLoading(false);
     }
   };
 
+  if (loading) {
+    return (
+      <section className="jobs-center">
+        <div className="loading"></div>
+      </section>
+    );
+  }
+
   return (
     <>
-      <main>
+      <section className="jobs-center">
+        <BtnContainer details={details} />
         <JobInfo details={details} />
-      </main>
+      </section>
     </>
   );
 };
