@@ -1,9 +1,13 @@
-const BtnContainer = ({ details }) => {
+const BtnContainer = ({ details, currentItem, setCurrentItem }) => {
   return (
     <div className="btn-container">
-      {details.map((item) => {
+      {details.map((item, index) => {
         return (
-          <button className="job-btn" key={item.id}>
+          <button
+            key={item.id}
+            onClick={() => setCurrentItem(index)}
+            className={index === currentItem ? "job-btn active-btn" : "job-btn"}
+          >
             {item.company}
           </button>
         );
