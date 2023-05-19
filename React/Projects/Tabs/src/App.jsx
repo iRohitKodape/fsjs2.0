@@ -7,6 +7,7 @@ const url = "https://course-api.com/react-tabs-project";
 const App = () => {
   const [details, setDetails] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [currentItem, setCurrentItem] = useState(0);
 
   useEffect(() => {
     fetchData();
@@ -38,7 +39,7 @@ const App = () => {
     <>
       <section className="jobs-center">
         <BtnContainer details={details} />
-        <JobInfo details={details} />
+        <JobInfo details={details} currentItem={currentItem} />
       </section>
     </>
   );
