@@ -1,4 +1,4 @@
-import Context from "./Context";
+import Context from "./Context/Context";
 import Provider from "./Provider";
 
 const Agents = () => {
@@ -18,8 +18,13 @@ const AgentVinod = () => {
     <Context.Consumer>
       {(context) => (
         <>
-          <h3>Agent Info:</h3>
-          <p>Mission Name :</p>
+          <h3>Agent Info:{context.data.agentId}</h3>
+          <p>Mission Name :{context.data.mName}</p>
+          <p>
+            Mission Name :{context.data.accept ? "ACCEPTED" : "NOT ACCEPTED"}
+          </p>
+
+          <button onClick={context.isAccepted}>ACCEPT the mission</button>
         </>
       )}
     </Context.Consumer>
