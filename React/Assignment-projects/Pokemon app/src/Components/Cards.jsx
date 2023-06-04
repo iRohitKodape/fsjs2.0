@@ -1,6 +1,6 @@
 import CardItem from "./CardItem";
 
-const Cards = ({ pokemon }) => {
+const Cards = ({ pokemon, fetchImages }) => {
   console.log(pokemon);
   return (
     <section className="cards">
@@ -8,7 +8,7 @@ const Cards = ({ pokemon }) => {
       <div className="underline"></div>
       <div className="card-items">
         {pokemon.map((p) => {
-          return <CardItem key={p} p={p} />;
+          return <CardItem key={p} p={p} fetchImages={fetchImages} />;
         })}
       </div>
     </section>

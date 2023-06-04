@@ -1,15 +1,4 @@
-
-
-
-const SingleCard = () => {
-  return (
-    <div className="singleCard">
-      <img src="" alt="" height="200px" />
-      <span className="card-name"></span>
-      <div className="features">
-        <span>Ability:</span>
-      </div>
-    </div>
-  );
+const SingleCard = ({ searchTerm, pokemon ,}) => {
+  return <div>SingleCard</div>;
 };
 export default SingleCard;

@@ -7,6 +7,7 @@ import Pagination from "./Components/Pagination";
 import SingleCard from "./Components/SingleCard";
 
 const urlApi = "https://pokeapi.co/api/v2/pokemon";
+const imgUrl = `https://pokeapi.co/api/v2/pokemon/`;
 
 function App() {
   const [pokemon, setPokemon] = useState([]);
@@ -16,6 +17,12 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
   const [isSearching, setIsSearching] = useState(false);
+
+  // fetch images state values
+
+  const [img, setImg] = useState();
+  const [ability, setAbility] = useState();
+  const [power, setPower] = useState();
 
   useEffect(() => {
     setLoading(true);
@@ -30,7 +37,6 @@ function App() {
         setPrevPageUrl(res.data.previous);
         setPokemon(res.data.results.map((p) => p.name));
       });
-
     return () => cancel();
   }, [currentPageUrl]);
 
@@ -50,6 +56,17 @@ function App() {
       </>
     );
   }
+  // fetchImages
+  const fetchImages = async () => {
+    try {
+      const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${p}`);
+      const data = res.data.sprites;
+      setImg(data.front_default);
+      setAbility(res.data.abilities[0].ability.name);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <main className="main-container">
@@ -59,7 +76,21 @@ function App() {
         setIsSearching={setIsSearching}
         isSearching={isSearching}
       />
-      {!isSearching ? <Cards pokemon={pokemon} /> : <SingleCard />}
+      {!isSearching ? (
+        <Cards
+          pokemon={pokemon}
+          img={img}
+          ability={ability}
+          power={power}
+          fetchImages={fetchImages}
+        />
+      ) : (
+        <SingleCard
+          pokemon={pokemon}
+          searchTerm={searchTerm}
+          setSearchTerm={setSearchTerm}
+        />
+      )}
       {!isSearching ? (
         <Pagination
           gotoNextPage={nextPageUrl ? gotoNextPage : null}

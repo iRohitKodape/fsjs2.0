@@ -2,7 +2,13 @@ import { HiOutlineSearch } from "react-icons/hi";
 import { GrRefresh } from "react-icons/gr";
 import axios from "axios";
 
-const Hero = ({ searchTerm, setSearchTerm, setIsSearching, isSearching }) => {
+const Hero = ({
+  searchTerm,
+  setSearchTerm,
+  setIsSearching,
+  isSearching,
+  renderSinglePokemon,
+}) => {
   return (
     <article className="hero">
       <section className="search">
@@ -12,7 +18,7 @@ const Hero = ({ searchTerm, setSearchTerm, setIsSearching, isSearching }) => {
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
-        <button type="button" onClick={"hello"}>
+        <button type="button" onClick={() => setIsSearching(!isSearching)}>
           {!isSearching ? (
             <HiOutlineSearch color="white" title="search" />
           ) : (
